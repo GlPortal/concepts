@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>glPortal testing elements - by units</title>
+<style>
+@font-face {
+  font-family: 'Bebas';
+  src: url('fonts/BEBAS.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: sans-serif;
+  background: #FFF;
+  color: #030303;
+}
+h2 {
+  font-family: Bebas;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+}
+ul {
+  margin: .4em 0 1em;
+  padding-left: 1em;
+}
+.unit {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 1em;
+}
+.unit>div:nth-of-type(1) {
+  flex-shrink: 1;
+  padding-right: .4em;
+  border-right: .1em solid gray;
+  width: 6em;
+}
+.unit>div:nth-of-type(1) img {
+  width: 6em;
+  height: 6em;
+}
+.unit>div:nth-of-type(1) img.s {
+  width: 2em;
+  height: 2em;
+}
+.unit>div:nth-of-type(2) {
+  flex-grow: 1;
+  padding: .5em 1em;
+}
+.unit .count {
+  font-family: Bebas;
+  font-size: 5em;
+  opacity: .2;
+  float: right;
+}
+</style>
+</head>
+<body>
+<div class="unit">
+<div><img src="img/m.svg"></div>
+<div><span class="count">1</span>
+<h2>Metre</h2>
+<ul>
+<li>Portals</li>
+<li>Tight spaces, large spaces</li>
+</ul>
+
+Should be short enough, not a lot to teach except the base Portal mechanism and how to move stuff around.
+</div>
+</div>
+
+<div class="unit">
+<div><img src="img/s.svg"><br>
+<img class="s" src="img/m.svg"></div>
+<div><span class="count">2</span>
+<h2>Second</h2>
+<ul>
+<li>Velocity (not momentum)</li>
+<li>Timers</li>
+</ul>
+</div>
+</div>
+
+<div class="unit">
+<div><img src="img/kg.svg"><br>
+<img class="s" src="img/m.svg"><img class="s" src="img/s.svg"></div>
+<div><span class="count">3</span>
+<h2>Kilogram</h2>
+<ul>
+<li>Momentum / energy</li>
+<li>Differently weighed cubes</li>
+</ul>
+</div>
+</div>
+
+<div class="unit">
+<div><img src="img/mol.svg">
+<img class="s" src="img/m.svg"><img class="s" src="img/kg.svg"></div>
+<div><span class="count">4</span>
+<h2>Mole</h2>
+<ul>
+<li>Density</li>
+<li>Quantity (what of?)
+    <ul>
+    <li>Filling cubes with stuff?</li>
+    </ul></li>
+</ul>
+</div>
+</div>
+
+<div class="unit">
+<div><img src="img/cd.svg"></div>
+<div><span class="count">5</span>
+<h2>Candela</h2>
+<ul>
+<li>Light</li>
+<li>Lasers (1 color, multiple ones for later (Hz chapter))</li>
+</ul>
+</div>
+</div>
+
+<div class="unit">
+<div><img src="img/K.svg"><br>
+<img class="s" src="img/m.svg"><img class="s" src="img/s.svg"><img class="s" src="img/cd.svg"></div>
+<div><span class="count">6</span>
+<h2>Kelvin</h2>
+<ul>
+<li>Infrared heats up</li>
+<li>Convection (hot air baloons)</li>
+<li>Thermal conductance</li>
+<li>Thermal shock (break things)</li>
+<li>The floor is lava</li>
+</ul>
+</div>
+</div>
+
+<div class="unit">
+<div><img src="img/A.svg"><br>
+<img class="s" src="img/kg.svg"><img class="s" src="img/m.svg"><img class="s" src="img/s.svg"></div>
+<div><span class="count">7</span>
+<h2>Ampere, Volt, Watt</h2>
+<ul>
+<li>Boiling water powers turbines</li>
+<li>Hydraulic analogy</li>
+<li>Tesla coils</li>
+<li>Battery charging</li>
+</ul>
+</div>
+</div>
+
+<div class="unit">
+<div><img src="img/Hz.svg"><br>
+<img class="s" src="img/m.svg"><img class="s" src="img/s.svg"><img class="s" src="img/cd.svg"></div>
+<div><span class="count">8</span>
+<h2>Hertz</h2>
+<ul>
+<li>Speed of light</li>
+<li>Multiple light colors</li>
+<li>Speed of sound</li>
+<li>Music</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
