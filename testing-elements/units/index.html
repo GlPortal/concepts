@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <title>glPortal testing elements - by units</title>
 <style>
 @font-face {
@@ -9,10 +10,16 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Gandhi Sans';
+  src: url('fonts/GandhiSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
-  font-family: sans-serif;
-  background: #FFF;
+  font-family: 'Gandhi Sans', sans-serif;
+  background: #F6F6FF;
   color: #030303;
 }
 h2 {
@@ -21,8 +28,20 @@ h2 {
   padding: 0;
   font-size: 1.5em;
 }
-ul {
+h2 span {
+  font-size: .7em;
+}
+h2 div.t {
+  display: inline;
+  font-size: .7em;
+  color: #034070;
+  margin-left: 2em;
+  opacity: .5;
+}
+.unit>div>ul {
   margin: .4em 0 1em;
+}
+.unit div ul {
   padding-left: 1em;
 }
 .unit {
@@ -57,16 +76,20 @@ ul {
 </style>
 </head>
 <body>
+Each chapter has rooms with a specific design theme. Color cues are the same as the "logo" of each unit.
+<br><br>
 <div class="unit">
 <div><img src="img/m.svg"></div>
 <div><span class="count">1</span>
-<h2>Metre</h2>
+<h2>Metre<div class="t">(Redefining) Space</div></h2>
 <ul>
 <li>Portals</li>
 <li>Tight spaces, large spaces</li>
+<li>Non-euclidean geometries and rooms</li>
 </ul>
 
-Should be short enough, not a lot to teach except the base Portal mechanism and how to move stuff around.
+Should be short enough, not a lot to teach except the base portal mechanism and how to move stuff around.<br>
+Square/rectangular rooms, insipired by rulers, scale/grids as decoration elements, as well as compass roses.
 </div>
 </div>
 
@@ -74,11 +97,15 @@ Should be short enough, not a lot to teach except the base Portal mechanism and 
 <div><img src="img/s.svg"><br>
 <img class="s" src="img/m.svg"></div>
 <div><span class="count">2</span>
-<h2>Second</h2>
+<h2>Second<div class="t">(A leap in) Time</div></h2>
 <ul>
 <li>Velocity (not momentum)</li>
+<li>Fling</li>
+<li>Catapulting<!-- trebuchet masterrace --></li>
 <li>Timers</li>
 </ul>
+
+Circular room designs, inspired by clocks and gears. Actual clocks, digital or analogic, pendulum clocks, sundials, hourglasses ought to be used as additional inspiration.
 </div>
 </div>
 
@@ -86,37 +113,58 @@ Should be short enough, not a lot to teach except the base Portal mechanism and 
 <div><img src="img/kg.svg"><br>
 <img class="s" src="img/m.svg"><img class="s" src="img/s.svg"></div>
 <div><span class="count">3</span>
-<h2>Kilogram</h2>
+<h2>Kilogram<span>, Newton, Litre</span><div class="t">(Critical) Mass</div></h2>
 <ul>
+<li>Force</li>
+<li>Acceleration
+  <ul>
+  <li>Gravity, (projected) gravity fields</li>
+  </ul></li>
 <li>Momentum / energy</li>
 <li>Differently weighed cubes</li>
+<li>Weighing scales
+  <ul>
+  <li>Analogic</li>
+  <li>Digital</li>
+  </ul></li>
 </ul>
+
+Trapezoidal rooms, like weights.
 </div>
 </div>
 
 <div class="unit">
-<div><img src="img/mol.svg">
+<div><img src="img/mol.svg"><br>
 <img class="s" src="img/m.svg"><img class="s" src="img/kg.svg"></div>
 <div><span class="count">4</span>
-<h2>Mole</h2>
+<h2>Mole<div class="t">(Insane) Amount</div></h2>
 <ul>
 <li>Density</li>
 <li>Quantity (what of?)
-    <ul>
-    <li>Filling cubes with stuff?</li>
-    </ul></li>
+  <ul>
+  <li>Filling cubes with stuff?</li>
+  </ul></li>
 </ul>
+Not a lot to explain, should be short
 </div>
 </div>
 
 <div class="unit">
-<div><img src="img/cd.svg"></div>
+<div><img src="img/cd.svg"><br>
+<img class="s" src="img/m.svg"></div>
 <div><span class="count">5</span>
-<h2>Candela</h2>
+<h2>Candela<span>, Lux, Lumen, Decibel</span><div class="t">(Flashing) Light</div></h2>
 <ul>
 <li>Light</li>
-<li>Lasers (1 color, multiple ones for later (Hz chapter))</li>
+<li>Lasers
+  <ul>
+  <li>1 color, multiple ones for later (Hz chapter)</li>
+  <li>Combining lasers / attenuating them</li>
+  <li>Itensity range receptors (display à la VU meter)</li>
+  </ul></li>
+<li>Light falloff (inverse-square law)</li>
 </ul>
+Star-shaped rooms
 </div>
 </div>
 
@@ -124,14 +172,18 @@ Should be short enough, not a lot to teach except the base Portal mechanism and 
 <div><img src="img/K.svg"><br>
 <img class="s" src="img/m.svg"><img class="s" src="img/s.svg"><img class="s" src="img/cd.svg"></div>
 <div><span class="count">6</span>
-<h2>Kelvin</h2>
+<h2>Kelvin<span>, Celcius</span><div class="t">(Phase transition) Temperature</div></h2>
 <ul>
 <li>Infrared heats up</li>
 <li>Convection (hot air baloons)</li>
-<li>Thermal conductance</li>
+<li>Thermal conductivity</li>
 <li>Thermal shock (break things)</li>
 <li>The floor is lava</li>
+<li>Melt metal / burn wood</li>
+<li>Solidify water</li>
 </ul>
+
+Intoduce water as a testing and environmental element.
 </div>
 </div>
 
@@ -139,10 +191,11 @@ Should be short enough, not a lot to teach except the base Portal mechanism and 
 <div><img src="img/A.svg"><br>
 <img class="s" src="img/kg.svg"><img class="s" src="img/m.svg"><img class="s" src="img/s.svg"></div>
 <div><span class="count">7</span>
-<h2>Ampere, Volt, Watt</h2>
+<h2>Ampere<span>, Volt, Watt, Ohm</span><div class="t">(Hyrdo) Electric current</div></h2>
 <ul>
 <li>Boiling water powers turbines</li>
 <li>Hydraulic analogy</li>
+<li>Explain Ohm's law</li>
 <li>Tesla coils</li>
 <li>Battery charging</li>
 </ul>
@@ -153,12 +206,16 @@ Should be short enough, not a lot to teach except the base Portal mechanism and 
 <div><img src="img/Hz.svg"><br>
 <img class="s" src="img/m.svg"><img class="s" src="img/s.svg"><img class="s" src="img/cd.svg"></div>
 <div><span class="count">8</span>
-<h2>Hertz</h2>
+<h2>Hertz<div class="t">(Audiovisual) Frequency</div></h2>
 <ul>
 <li>Speed of light</li>
 <li>Multiple light colors</li>
+<li>Explain X-ray, IR, UV, microwaves, FM radio
+  <ul><li>Make a reference to Portal's "Transmission received" radios</li></ul>
+</li>
 <li>Speed of sound</li>
 <li>Music</li>
+<li>Fourier transform</li>
 </ul>
 </div>
 </div>
